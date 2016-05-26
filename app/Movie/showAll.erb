@@ -1,0 +1,26 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Movie Collection</h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="home" data-direction="reverse" <%= "data-ajax='false'" if is_bb6 %>>
+      Main Menu
+    </a>
+    <a href="<%= url_for :action => :addMovie %>" class="ui-btn-right" data-icon="plus">
+      Add Movie
+    </a>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <% @movies.each do |movie| %>     
+          <li>
+            <a href="<%= url_for :action => :show, :id => movie.object %>">
+              <%= movie.title %>
+            </a>
+          </li>
+      
+      <% end %>
+    </ul>
+  </div>
+
+</div>

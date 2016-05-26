@@ -1,0 +1,8 @@
+rhodes_path='C:/MotorolaRhoMobileSuite5.0.30/ruby/lib/ruby/gems/1.9.1/gems/rhodes-5.0.30'
+app_version='1.0'
+app_name='DVDRoulette'
+reload_app_changes=0
+debug_port=
+debug_host='127.0.0.1'
+platform='iphone'
+ext_path=C:/MotorolaRhoMobileSuite5.0.30/ruby/lib/ruby/gems/1.9.1/gems/rhodes-5.0.30/lib/commonAPI/coreapi;C:/MotorolaRhoMobileSuite5.0.30/ruby/lib/ruby/gems/1.9.1/gems/rhodes-5.0.30/lib/extensions/json;C:/MotorolaRhoMobileSuite5.0.30/ruby/lib/ruby/gems/1.9.1/gems/rhoconnect-client-5.0.30/lib/../ext/rhoconnect-client;

@@ -1,0 +1,64 @@
+
+<div data-role="page" data-add-back-btn="false">
+
+  <div data-role="header" data-position="inline">
+    <h1>Movie Info</h1>
+    <a href="<%= url_for :action => :showAll %>" class="ui-btn-left" data-icon="arrow-l" data-direction="reverse">
+      Collection
+    </a>
+    <a href="<%= url_for :action => :delete, :id => @movie.object %>" class="ui-btn-right" data-icon="star">
+      Delete
+    </a>
+  </div>
+
+  <div data-role="content">
+
+         <div style ="font-size: 200%;text-align:center" class="itemValue"><%= @movie.title %> 
+        </div>
+           <hr/>
+         
+            <div class="itemLabel">Year</div>
+            <div class="itemValue"><%= @movie.year %></div>
+          
+      
+          
+            <div class="itemLabel">Rated</div>
+            <div class="itemValue"><%= @movie.rated %></div>
+         
+     
+           
+            <div class="itemLabel">Runtime</div>
+            <div class="itemValue"><%= @movie.runtime %></div>
+          
+      
+          
+            <div class="itemLabel">Genre</div>
+            <div class="itemValue"><%= @movie.genre %></div>
+          
+      
+          
+            <div class="itemLabel">Director</div>
+            <div class="itemValue"><%= @movie.director %></div>
+          
+      
+              
+          
+            <div class="itemLabel">Actors</div>
+            <div class="itemValue"><%= @movie.actors %></div>
+          
+      
+          
+            <div class="itemLabel">Plot</div>
+            <div class="itemValue"><%= @movie.plot %></div>
+            
+           <div class="itemLabel">IMDB Link</div>
+           <div class="itemValue"><a href="<%= url_for :action => :imdbLink, :id => @movie.object %>">
+             Click Here
+           </a></div>
+           
+            
+            
+            
+  </div>
+
+</div>

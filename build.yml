@@ -1,0 +1,40 @@
+#sdk: "C:/MotorolaRhoMobileSuite5.0.30/ruby/lib/ruby/gems/1.9.1/gems/rhodes-5.0.30"
+sdkversion: "5.0.0"
+name: "DVDRoulette"
+version: 1.0
+vendor: "rhomobile"
+build: "debug"
+applog: "rholog.txt"
+iphone:
+  configuration: "Release"
+  sdk: "iphonesimulator8.1"
+  provisionprofile: 
+  codesignidentity: "iPhone Developer"
+  entitlements: 
+  BundleIdentifier: "com.rhomobile.dvdroulette"
+  BundleURLScheme: "dvdroulette"
+  production:
+    ipa_itunesartwork_image: "./production/iTunesArtwork.png"
+  emulatortarget: "iphone"
+wp8:
+  productid: "e282bb31-dfb2-0132-e6d5-0c705a4996a8"
+android:
+  manifest_template: "AndroidManifest.erb"
+  version: "4.4.2"
+# Note: in order to simplify debugging only app messages and system channels with priority informative and higher, and any errors are enabled by default
+  no_compression:
+    - pdf
+    - html
+#sdk: "MC3000c50b (ARMV4I)"
+#sdk: "Windows Mobile 6.5.3 Professional DTK (ARMV4I)"
+    - css
+  logcatFilter: "APP:I StrictMode:I DEBUG:I *:E"
+  capabilities:
+    - hardware_acceleration
+  emulator: "Nexus_4_API_19"
+wm: 
+extensions:
+  - rhoconnect-client
+capabilities:
+  - non_motorola_device
+  - native_browser

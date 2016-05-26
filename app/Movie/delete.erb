@@ -1,0 +1,14 @@
+<div style="postion:relative" data-role="page" data-add-back-btn="false">
+
+  <div data-role="header" data-position="inline">
+    <h1>Movie Deleted</h1>
+    <a href="<%= url_for :action => :showAll %>" class="ui-btn-left" data-icon="arrow-l" data-direction="reverse">
+     Collection
+    </a>
+  </div>
+
+  <div style="position:absolute; top:60%; height:10em; margin-top:-5em; margin-left: 15%; width: 300px" data-role="content">
+      <%= @movie.title%> has been deleted from your collection
+  </div>
+      
+</div

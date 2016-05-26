@@ -1,0 +1,20 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>Add Movie</h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Menu
+    </a>
+  </div>
+
+  <div data-role="content">
+  
+      <form method="GET" action="<%= url_for :action => :getInfo %>">
+        <label for="Movie_Title" class="itemLabel">Enter Movie Title</label>
+        <input type="text" id="movie" name="Movie" class="" <%= placeholder("Movie") %> />
+        <label for="Movie_Year" class="itemLabel">Enter Year of Release(Optional)</label>
+        <input type="text" id="year" name="Year" class="" <%= placeholder("Year") %> />
+        <input type="submit" value="Add Movie"/>
+      </form>
+  </div>
+  </div>

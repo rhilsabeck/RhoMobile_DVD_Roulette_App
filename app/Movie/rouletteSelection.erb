@@ -1,0 +1,22 @@
+<div style="postion:relative" data-role="page">
+<div style="position:absolute; top:30%; height:10em; margin-top:-5em; margin-left: 15%; width: 300px">
+<h1 style="text-align:center; font-size: 200%">Your</h1>
+<h1 style="text-align:center; font-size: 200%">Roulette Selection</h1>
+<h1 style="text-align:center; font-size: 200%">is:</h1>
+
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <li>
+        <a href="<%= url_for :action => :show, :id => @randomMovie.object %>">
+        <%= @randomMovie.title %>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  </div
+
+</div>
+          
+
